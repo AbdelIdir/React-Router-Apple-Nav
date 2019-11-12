@@ -5,16 +5,16 @@ import { SubNav } from "./SubNav";
 export const Nav = () => {
   return (
     <>
-      <Link to="/">HOME </Link>
-      <Link to="/Mac">MAC</Link>
-      <Link to="/Ipad">IPAD</Link>
-      <Link to="/Iphone">IPHONE</Link>
-      <Link to="/Watch">WATCH</Link>
-      <Link to="/TV">TV</Link>
-      <Link to="/Music">MUSIC</Link>
-      <Link to="/Support">SUPPORT</Link>
-      <Link to="/Search">SEARCH</Link>
-      <Link to="/Cart">CART</Link>
+      <NavLink to="/">HOME </NavLink>
+      <NavLink to="/Mac">MAC</NavLink>
+      <NavLink to="/Ipad">IPAD</NavLink>
+      <NavLink to="/Iphone">IPHONE</NavLink>
+      <NavLink to="/Watch">WATCH</NavLink>
+      <NavLink to="/TV">TV</NavLink>
+      <NavLink to="/Music">MUSIC</NavLink>
+      <NavLink to="/Support">SUPPORT</NavLink>
+      <NavLink to="/Search">SEARCH</NavLink>
+      <NavLink to="/Cart">CART</NavLink>
     </>
   );
 };

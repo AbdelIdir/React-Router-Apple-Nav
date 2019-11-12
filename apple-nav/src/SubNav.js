@@ -22,7 +22,7 @@ export const SubNav = () => {
       <MacDiv>
         <h1>macPro</h1>
         <h1>macAir</h1>
-        <Link to="/Mac/macbookpro">MacPro</Link>
+        <NavLink to="/Mac/macbookpro">MacPro</NavLink>
         <h1>Imac</h1>
         <h1> Mac mini</h1>
         <h1>Accessories</h1>
