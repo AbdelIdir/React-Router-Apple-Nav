@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Route, Link, NavLink } from "react-router-dom";
-import {SubNav} from "./SubNav";
+import { SubNav } from "./SubNav";
 export const Nav = () => {
   return (
     <>
@@ -15,7 +15,6 @@ export const Nav = () => {
       <Link to="/Support">SUPPORT</Link>
       <Link to="/Search">SEARCH</Link>
       <Link to="/Cart">CART</Link>
-
     </>
   );
 };

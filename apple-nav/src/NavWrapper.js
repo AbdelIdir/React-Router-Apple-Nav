@@ -14,15 +14,12 @@ export const NavWrapper = () => {
     justify-content: space-around;
   `;
 
- const MacProP = styled.p`
-
-font-size: 20px;
-padding-left: 50px;
-color:white;
-background:black;
-
-
- `
+  const MacProP = styled.p`
+    font-size: 20px;
+    padding-left: 50px;
+    color: white;
+    background: black;
+  `;
   return (
     <>
       <Header>
@@ -101,10 +98,12 @@ background:black;
         }}
       />
 
-<Route path ="/Mac/macbookpro" render= {props => {
-
-return (<MacProP> MacPro Price : 3000$</MacProP>) }} />
-
+      <Route
+        path="/Mac/macbookpro"
+        render={props => {
+          return <MacProP> MacPro Price : 3000$</MacProP>;
+        }}
+      />
     </>
   );
 };
