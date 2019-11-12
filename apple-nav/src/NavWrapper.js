@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Route, Link, NavLink } from "react-router-dom";
+import { Nav } from "./Nav";
+import { SubNav, HomePage } from "./SubNav";
 
 export const NavWrapper = () => {
   const Header = styled.header`
@@ -8,33 +10,30 @@ export const NavWrapper = () => {
     height: 200px;
     background: grey;
     color: red;
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
   `;
+
+ const MacProP = styled.p`
+
+font-size: 20px;
+padding-left: 50px;
+color:white;
+background:black;
+
+
+ `
   return (
     <>
       <Header>
-
-          <Link to ="/" >HOME </Link>
-        <Link to="/Mac">MAC</Link>
-
-        <Link to="/Ipad">IPAD</Link>
-
-        <Link to="/Iphone">IPHONE</Link>
-        <Link to="/Watch">WATCH</Link>
-        <Link to="/TV">TV</Link>
-        <Link to="/Music">MUSIC</Link>
-        <Link to="/Support">SUPPORT</Link>
-        <Link to="/Search">SEARCH</Link>
-        <Link to="/Cart">CART</Link>
+        <Nav />
       </Header>
 
-      <Route exact path="/" />
       <Route
         exact
         path="/Mac"
         render={props => {
-          return <p>This is the mac test</p>;
+          return <SubNav />;
         }}
       />
       <Route
@@ -44,41 +43,68 @@ export const NavWrapper = () => {
           return <p>This is the Ipad test</p>;
         }}
       />
-      <Route exact path="Iphone/"  exact
+      <Route
+        exact
         path="/Iphone"
         render={props => {
-          return <p>Iphone </p>;
-        }} />
-      <Route exact path="/Watch"  exact
+          return <p> This is the Iphone </p>;
+        }}
+      />
+      <Route
+        exact
         path="/Watch"
         render={props => {
           return <p>This is the Watch test</p>;
-        }} />
-      <Route exact path="/TV"  exact
+        }}
+      />
+      <Route
+        exact
         path="/TV"
         render={props => {
           return <p>This is the TV test</p>;
-        }} />
-      <Route exact path="/Music"  exact
+        }}
+      />
+      <Route
+        exact
         path="/Music"
         render={props => {
           return <p>This is the Music test</p>;
-        }} />
-      <Route exact path="/Support"  exact
+        }}
+      />
+      <Route
+        exact
         path="/Support"
         render={props => {
           return <p>This is the Support test</p>;
-        }} />
-      <Route exact path="/Search"  exact
+        }}
+      />
+      <Route
+        exact
         path="/Search"
         render={props => {
           return <p>This is the search test</p>;
-        }} />
-      <Route exact path="/Cart"  exact
+        }}
+      />
+      <Route
+        exact
         path="/Cart"
         render={props => {
           return <p>This is the cart test</p>;
-        }} />
+        }}
+      />
+
+      <Route
+        exact
+        path="/"
+        render={props => {
+          return <HomePage />;
+        }}
+      />
+
+<Route path ="/Mac/macbookpro" render= {props => {
+
+return (<MacProP> MacPro Price : 3000$</MacProP>) }} />
+
     </>
   );
 };
