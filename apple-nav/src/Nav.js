@@ -13,9 +13,9 @@ export const Nav = () => {
   `;
 
   return (
-    <NavWrapperDiv>
+    <NavWrapperDiv >
       <NavLink to="/">HOME </NavLink>
-      <NavLink to="/Mac">MAC</NavLink>
+      <NavLink to="/Mac" className="navlinks">MAC</NavLink>
       <NavLink to="/Ipad">IPAD</NavLink>
       <NavLink to="/Iphone">IPHONE</NavLink>
       <NavLink to="/Watch">WATCH</NavLink>

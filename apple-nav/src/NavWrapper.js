@@ -91,8 +91,7 @@ export const NavWrapper = () => {
       />
 
       <Route
-        exact
-        path="/"
+        exact path="/"
         render={props => {
           return <HomePage />;
         }}
