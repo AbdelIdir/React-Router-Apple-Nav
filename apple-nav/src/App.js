@@ -6,10 +6,8 @@ import {NavWrapper} from "./NavWrapper";
 
 function App() {
   return (
-    <div className="App">
     
     <NavWrapper/>
-    </div>
   );
 }
 
